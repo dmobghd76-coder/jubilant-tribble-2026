@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Abu Hena Mustofa Kamal | Laparoscopic & Colorectal Surgeon in Dhaka</title>
+  <meta name="description" content="Consult Dr. Abu Hena Mustofa Kamal, General, Laparoscopic and Colorectal Surgeon in Dhaka, for gallbladder stones, hernia, appendicitis, piles, anal fissure and fistula treatment." />
+  <meta name="keywords" content="Laparoscopic surgeon Dhaka, Colorectal surgeon Dhaka, Hernia surgeon Bangladesh, Piles treatment Dhaka, Gallbladder surgery Dhaka, Anal fissure treatment Dhaka" />
+  <meta name="theme-color" content="#0f4c81" />
+  <style>
+    :root {
+      --primary: #0f4c81;
+      --primary-dark: #0a3559;
+      --accent: #dfeaf4;
+      --text: #1d2939;
+      --muted: #667085;
+      --bg: #f7fafc;
+      --white: #ffffff;
+      --border: #e4e7ec;
+      --shadow: 0 10px 30px rgba(15, 76, 129, 0.10);
+      --radius: 20px;
+      --radius-sm: 14px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: min(100% - 32px, var(--max));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      background: var(--primary-dark);
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .topbar .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.93);
+      border-bottom: 1px solid rgba(228,231,236,0.9);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 20px;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--primary-dark);
+    }
+
+    .brand small {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 15px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 20px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 700;
+      transition: 0.25s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary:hover { background: var(--primary-dark); }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--primary-dark);
+      border-color: var(--border);
+    }
+
+    .hero {
+      background:
+        linear-gradient(135deg, rgba(10,53,89,0.94), rgba(15,76,129,0.88)),
+        radial-gradient(circle at top right, rgba(255,255,255,0.15), transparent 35%);
+      color: #fff;
+      padding: 72px 0 44px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 5vw, 54px);
+      line-height: 1.1;
+      margin: 0 0 12px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: rgba(255,255,255,0.92);
+      max-width: 720px;
+      margin: 0 0 20px;
+    }
+
+    .credentials {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 16px 0 24px;
+    }
+
+    .tag {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 26px;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .trust-card,
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .trust-card {
+      padding: 18px;
+      color: var(--text);
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .doctor-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 28px;
+      padding: 22px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.16);
+    }
+
+    .portrait {
+      aspect-ratio: 4/5;
+      border-radius: 22px;
+      background: linear-gradient(180deg, #dceaf7, #f8fbff);
+      border: 1px solid rgba(255,255,255,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--primary-dark);
+      font-weight: 700;
+      padding: 24px;
+    }
+
+    section {
+      padding: 72px 0;
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    .section-head h2 {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.15;
+      color: var(--primary-dark);
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      padding: 24px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: var(--primary-dark);
+      font-size: 22px;
+    }
+
+    ul.clean {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.clean li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    ul.clean li:last-child { border-bottom: 0; }
+
+    .muted { color: var(--muted); }
+
+    .info-strip {
+      background: linear-gradient(180deg, #eef5fb, #f9fbfd);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .about-box {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .stat-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .mini-card {
+      background: #fff;
+      padding: 18px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .mini-card strong {
+      display: block;
+      font-size: 28px;
+      color: var(--primary-dark);
+      margin-bottom: 4px;
+    }
+
+    .faq-item {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item h4 {
+      margin: 0 0 8px;
+      color: var(--primary-dark);
+      font-size: 18px;
+    }
+
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 22px;
+    }
+
+    .contact-list p {
+      margin: 0 0 10px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .form-grid .full { grid-column: 1 / -1; }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 14px 15px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: #fff;
+      font: inherit;
+      color: var(--text);
+    }
+
+    textarea { min-height: 120px; resize: vertical; }
+
+    .blog-list article {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .blog-list article:last-child { border-bottom: 0; }
+
+    .blog-list h3 {
+      margin: 0 0 6px;
+      font-size: 19px;
+    }
+
+    .cta-band {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: #fff;
+      border-radius: 28px;
+      padding: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    footer {
+      background: #0b1f33;
+      color: rgba(255,255,255,0.85);
+      padding: 32px 0 96px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .sticky-bar {
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      z-index: 60;
+      display: none;
+      gap: 12px;
+      background: rgba(255,255,255,0.95);
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 15px 35px rgba(16, 24, 40, 0.18);
+    }
+
+    .sticky-bar a {
+      flex: 1;
+      text-align: center;
+      padding: 13px 12px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .sticky-primary { background: var(--primary); color: #fff; }
+    .sticky-secondary { background: #eef5fb; color: var(--primary-dark); }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .grid-3,
+      .grid-2,
+      .about-box,
+      .contact-wrap,
+      .footer-grid,
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav { align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; }
+      .cta-band { flex-direction: column; align-items: flex-start; }
+    }
+
+    @media (max-width: 680px) {
+      .form-grid,
+      .stat-box { grid-template-columns: 1fr; }
+      .hero { padding-top: 48px; }
+      .sticky-bar { display: flex; }
+      h1 { font-size: 34px; }
+      .hero p { font-size: 16px; }
+      .brand { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div>Consultation Days: Saturday to Wednesday</div>
+      <div>WhatsApp / Phone: <a href="https://wa.me/8801755902779" target="_blank" rel="noopener">+8801755902779</a></div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        Dr. Abu Hena Mustofa Kamal
+        <small>General, Laparoscopic & Colorectal Surgeon</small>
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#locations">Chambers</a>
+        <a href="#blogs">Blog</a>
+        <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Trusted Surgical Care in Dhaka</span>
+        <h1>Premium Surgical Website for Better Patient Trust and Faster Appointments</h1>
+        <p>
+          Dr. Abu Hena Mustofa Kamal is a General, Laparoscopic and Colorectal Surgeon in Dhaka, providing patient-friendly, ethical and evidence-based treatment for gallbladder stones, hernia, appendicitis, piles, anal fissure, fistula and other common surgical conditions.
+        </p>
+
+        <div class="credentials">
+          <span class="tag">MBBS</span>
+          <span class="tag">BCS</span>
+          <span class="tag">FCPS</span>
+          <span class="tag">FACS</span>
+          <span class="tag">FIAGES</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/8801755902779?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20with%20Dr.%20Abu%20Hena%20Mustofa%20Kamal." target="_blank" rel="noopener">Book on WhatsApp</a>
+          <a class="btn btn-secondary" href="tel:+8801755902779">Call Now</a>
+          <a class="btn btn-secondary" href="#locations">View Chambers</a>
+        </div>
+      </div>
+
+      <div class="doctor-card">
+        <div class="portrait">
+          Replace this area with a professional doctor portrait or chamber photo for a premium hospital-style look.
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-card">Laparoscopic Surgery</div>
+        <div class="trust-card">General Surgery</div>
+        <div class="trust-card">Colorectal Care</div>
+        <div class="trust-card">Patient-Centered Counseling</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="info-strip">
+    <div class="container about-box">
+      <div class="card">
+        <div class="section-head">
+          <h2>About Dr. Abu Hena Mustofa Kamal</h2>
+          <p>
+            Experienced in general, laparoscopic and colorectal surgery, Dr. Kamal focuses on accurate diagnosis, clear patient communication, modern minimally invasive techniques and safer recovery planning.
+          </p>
+        </div>
+        <p>
+          Patients commonly seek consultation for gallbladder stones, appendicitis, hernia, piles, anal fissure, anal fistula and colorectal symptoms. This website layout is designed to build trust, improve Google visibility in Bangladesh and make appointment booking easy on mobile.
+        </p>
+      </div>
+      <div class="stat-box">
+        <div class="mini-card"><strong>Dhaka</strong><span>Chamber-based consultation</span></div>
+        <div class="mini-card"><strong>Keyhole</strong><span>Minimally invasive surgical focus</span></div>
+        <div class="mini-card"><strong>WhatsApp</strong><span>Simple appointment booking flow</span></div>
+        <div class="mini-card"><strong>SEO Ready</strong><span>Optimized for Google search intent</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-head">
+        <h2>Surgical Services</h2>
+        <p>Structured to match the common services patients search for on Google in Dhaka and Bangladesh.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Laparoscopic Surgery</h3>
+          <ul class="clean">
+            <li>Laparoscopic Cholecystectomy</li>
+            <li>Laparoscopic Appendicectomy</li>
+            <li>Laparoscopic Hernia Repair</li>
+            <li>Smaller incision, less pain, faster recovery</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>General Surgery</h3>
+          <ul class="clean">
+            <li>Hernia surgery</li>
+            <li>Breast lump evaluation</li>
+            <li>Soft tissue procedures</li>
+            <li>Abdominal wall and common surgical problems</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Colorectal & Anorectal Care</h3>
+          <ul class="clean">
+            <li>Piles (Hemorrhoids)</li>
+            <li>Anal fissure</li>
+            <li>Anal fistula</li>
+            <li>Rectal bleeding and colorectal evaluation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Why Patients Choose Dr. Kamal</h2>
+        <p>A premium hospital-style homepage should answer trust questions before the patient calls.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <ul class="clean">
+            <li>Experienced in open and minimally invasive procedures</li>
+            <li>Clear explanation in patient-friendly language</li>
+            <li>Ethical and evidence-based treatment approach</li>
+            <li>Focused on safety, comfort and recovery guidance</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Commonly Searched Conditions</h3>
+          <p class="muted">These terms also support search relevance.</p>
+          <p>Gallbladder stones, appendicitis, hernia, piles, anal fissure, anal fistula, groin swelling, abdominal pain and colorectal symptoms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="locations" class="info-strip">
+    <div class="container">
+      <div class="section-head">
+        <h2>Chamber Locations</h2>
+        <p>Keep these details identical across your website, Google Business Profile and Facebook page.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Ibn Sina Specialised Hospital</h3>
+          <p>Dhaka, Bangladesh</p>
+          <p class="muted">Add exact address, map embed and chamber hours here.</p>
+        </div>
+        <div class="card">
+          <h3>Aurora Specialised Hospital</h3>
+          <p>Dhaka, Bangladesh</p>
+          <p class="muted">Add exact address, floor/chamber number and directions here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blogs">
+    <div class="container">
+      <div class="section-head">
+        <h2>SEO Blog Topics That Bring Patients from Google</h2>
+        <p>These can be expanded into full articles later. Keeping them on the homepage also improves topical relevance.</p>
+      </div>
+
+      <div class="card blog-list">
+        <article><h3>Piles Treatment in Dhaka: Symptoms, Causes and When You Need a Surgeon</h3><div class="muted">Target keyword: piles treatment dhaka</div></article>
+        <article><h3>Gallbladder Stones: When Is Laparoscopic Surgery Needed?</h3><div class="muted">Target keyword: gallbladder stone surgery dhaka</div></article>
+        <article><h3>Hernia Symptoms You Should Never Ignore</h3><div class="muted">Target keyword: hernia surgeon dhaka</div></article>
+        <article><h3>Anal Fissure Treatment in Bangladesh: What Patients Should Know</h3><div class="muted">Target keyword: anal fissure treatment dhaka</div></article>
+        <article><h3>Appendicitis: Early Signs, Danger Symptoms and Treatment</h3><div class="muted">Target keyword: appendicitis treatment dhaka</div></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Frequently Asked Questions</h2>
+        <p>These are useful for both patient trust and SEO.</p>
+      </div>
+
+      <div class="card">
+        <div class="faq-item">
+          <h4>What is laparoscopic surgery?</h4>
+          <div>It is a modern surgical technique performed through small cuts using a camera and special instruments.</div>
+        </div>
+        <div class="faq-item">
+          <h4>Is laparoscopic surgery safe?</h4>
+          <div>In properly selected patients, it is widely used and often allows less pain and quicker recovery.</div>
+        </div>
+        <div class="faq-item">
+          <h4>Do all piles need surgery?</h4>
+          <div>No. Treatment depends on severity, symptoms and examination findings.</div>
+        </div>
+        <div class="faq-item">
+          <h4>How do I book an appointment?</h4>
+          <div>You can use the WhatsApp button, call directly, or send an appointment request through the form below.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="appointment" class="info-strip">
+    <div class="container contact-wrap">
+      <div class="card contact-list">
+        <div class="section-head">
+          <h2>Online Appointment System</h2>
+          <p>Simple, mobile-friendly, and ready to connect with WhatsApp or your website inbox.</p>
+        </div>
+        <p><strong>Appointment Days:</strong> Saturday to Wednesday</p>
+        <p><strong>WhatsApp / Phone:</strong> <a href="tel:+8801755902779">+8801755902779</a></p>
+        <p><strong>Suggested WhatsApp message:</strong><br>
+          Hello, I would like to book an appointment with Dr. Abu Hena Mustofa Kamal. Please share the available schedule at Ibn Sina Specialised Hospital / Aurora Specialised Hospital.
+        </p>
+        <p class="muted">For a real working form, connect this section to Formspree, Netlify Forms, a WordPress form plugin, or your web developer's backend.</p>
+      </div>
+
+      <div class="card">
+        <form onsubmit="submitBooking(event)">
+          <div class="form-grid">
+            <div>
+              <label for="name">Full Name</label>
+              <input id="name" name="name" required />
+            </div>
+            <div>
+              <label for="phone">Mobile Number</label>
+              <input id="phone" name="phone" required />
+            </div>
+            <div>
+              <label for="age">Age</label>
+              <input id="age" name="age" />
+            </div>
+            <div>
+              <label for="sex">Sex</label>
+              <select id="sex" name="sex">
+                <option value="">Select</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="full">
+              <label for="problem">Main Problem / Symptoms</label>
+              <textarea id="problem" name="problem"></textarea>
+            </div>
+            <div>
+              <label for="chamber">Preferred Chamber</label>
+              <select id="chamber" name="chamber">
+                <option value="">Select</option>
+                <option>Ibn Sina Specialised Hospital</option>
+                <option>Aurora Specialised Hospital</option>
+              </select>
+            </div>
+            <div>
+              <label for="day">Preferred Day</label>
+              <select id="day" name="day">
+                <option value="">Select</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+              </select>
+            </div>
+            <div class="full">
+              <button class="btn btn-primary" type="submit">Send Appointment Request</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2 style="margin:0 0 8px; color:#fff;">Need consultation for gallbladder, hernia, piles, fissure or fistula?</h2>
+          <div>Book an appointment with Dr. Abu Hena Mustofa Kamal today.</div>
+        </div>
+        <a class="btn btn-secondary" href="https://wa.me/8801755902779?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20with%20Dr.%20Abu%20Hena%20Mustofa%20Kamal." target="_blank" rel="noopener">WhatsApp Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong style="display:block; font-size:18px; margin-bottom:8px; color:#fff;">Dr. Abu Hena Mustofa Kamal</strong>
+        <div>General, Laparoscopic & Colorectal Surgeon</div>
+        <div style="margin-top:10px;">MBBS, BCS, FCPS, FACS, FIAGES</div>
+        <div style="margin-top:10px;">Dhaka, Bangladesh</div>
+      </div>
+      <div>
+        <div><strong style="color:#fff;">Medical Disclaimer</strong></div>
+        <div style="margin-top:8px;">Information on this website is for educational purposes only and should not replace consultation with a qualified medical professional.</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-bar">
+    <a class="sticky-primary" href="https://wa.me/8801755902779?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20with%20Dr.%20Abu%20Hena%20Mustofa%20Kamal." target="_blank" rel="noopener">WhatsApp</a>
+    <a class="sticky-secondary" href="tel:+8801755902779">Call</a>
+  </div>
+
+  <script>
+    function submitBooking(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value || '';
+      const phone = document.getElementById('phone').value || '';
+      const age = document.getElementById('age').value || '';
+      const sex = document.getElementById('sex').value || '';
+      const problem = document.getElementById('problem').value || '';
+      const chamber = document.getElementById('chamber').value || '';
+      const day = document.getElementById('day').value || '';
+
+      const message = `Hello, I would like to request an appointment with Dr. Abu Hena Mustofa Kamal.%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AAge: ${encodeURIComponent(age)}%0ASex: ${encodeURIComponent(sex)}%0AMain Problem: ${encodeURIComponent(problem)}%0APreferred Chamber: ${encodeURIComponent(chamber)}%0APreferred Day: ${encodeURIComponent(day)}`;
+      window.open(`https://wa.me/8801755902779?text=${message}`, '_blank');
+    }
+  </script>
+</body>
+</html>
